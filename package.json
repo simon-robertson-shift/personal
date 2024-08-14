@@ -1,0 +1,23 @@
+{
+    "name": "personal",
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite --port 4000",
+        "build": "tsc -b && vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "solid-js": "^1.8.19"
+    },
+    "devDependencies": {
+        "@nomemo/nice-import-sorting": "0.1.4",
+        "@solidjs/router": "^0.14.2",
+        "@types/node": "^22.2.0",
+        "prettier": "^3.3.3",
+        "typescript": "^5.5.3",
+        "vite": "^5.4.0",
+        "vite-plugin-solid": "^2.10.2"
+    },
+    "private": true
+}
