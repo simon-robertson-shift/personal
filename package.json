@@ -12,6 +12,7 @@
     },
     "devDependencies": {
         "@nomemo/nice-import-sorting": "0.1.4",
+        "@solidjs/meta": "^0.29.4",
         "@solidjs/router": "^0.14.2",
         "@types/node": "^22.2.0",
         "prettier": "^3.3.3",
