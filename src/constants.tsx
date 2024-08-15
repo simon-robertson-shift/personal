@@ -5,7 +5,7 @@ export type ArticleMetadata = {
     readonly path: string
 }
 
-export type Company = "*" | "Shift Platform Ltd"
+export type Company = "*" | "Personal" | "Shift Platform Ltd"
 
 export const articles: ArticleMetadata[] = [
     {
@@ -33,6 +33,12 @@ export const articles: ArticleMetadata[] = [
         path: "/smart-support"
     },
     {
+        name: "Project Progression",
+        company: "Personal",
+        description: "Replace this text with a brief description of the project",
+        path: "/project-progression"
+    },
+    {
         name: "Downloadable Files",
         company: "*",
         description: "Replace this text with a brief description of the project",
@@ -42,6 +48,7 @@ export const articles: ArticleMetadata[] = [
 
 export const companyColor: Record<Company, string> = {
     "*": "#303030",
+    "Personal": "#4d5f47",
     "Shift Platform Ltd": "#664152"
 }
 

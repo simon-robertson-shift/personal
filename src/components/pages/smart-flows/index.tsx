@@ -21,6 +21,11 @@ export function SmartFlows() {
                         vestibulum varius faucibus eget dui. Ut et vulputate arcu. Aenean fermentum
                         erat ut elementum convallis.
                     </p>
+                    <ul>
+                        <li>List Item One</li>
+                        <li>List Item Two</li>
+                        <li>List Item Three</li>
+                    </ul>
                     <p>
                         Quisque congue metus vitae ornare tincidunt. Etiam pretium, erat quis
                         interdum blandit, odio lectus mattis lectus, ac sagittis nibh ligula id
