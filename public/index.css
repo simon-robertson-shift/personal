@@ -22,6 +22,8 @@ html {
     --size-6: calc(var(--size-1) * 6);
     --size-7: calc(var(--size-1) * 7);
     --size-8: calc(var(--size-1) * 8);
+    --size-header: 400px;
+    --size-footer: 400px;
 
     font-family: "Noto Sans", sans-serif;
     font-size: 18px;

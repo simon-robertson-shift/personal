@@ -1,5 +1,5 @@
 .component {
-    height: 400px;
+    height: var(--size-header);
     display: flex;
     flex-direction: column;
     justify-content: center;
