@@ -1,0 +1,7 @@
+.component {
+    max-width: 600px;
+}
+
+.expanded {
+    max-width: unset;
+}

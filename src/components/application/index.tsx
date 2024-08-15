@@ -1,21 +1,25 @@
 import { MetaProvider } from "@solidjs/meta"
 import { Route, Router } from "@solidjs/router"
 
-import { PageFooter } from "app/components/page-footer"
-import { PageNavigator } from "app/components/page-navigator"
+import { PageFooter } from "app/components/core/page-footer"
+import { PageNavigator } from "app/components/core/page-navigator"
 
 import { lazy } from "solid-js"
 
-const Home = lazy(() => import("app/components/routes/home"))
+import css from "./index.module.css"
+
+const Home = lazy(() => import("app/components/pages/home"))
 
 export function Application() {
     return (
-        <MetaProvider>
+        <main class={css.component}>
             <PageNavigator />
-            <Router>
-                <Route path="/" component={Home} />
-            </Router>
+            <MetaProvider>
+                <Router>
+                    <Route path="/" component={Home} />
+                </Router>
+            </MetaProvider>
             <PageFooter />
-        </MetaProvider>
+        </main>
     )
 }
