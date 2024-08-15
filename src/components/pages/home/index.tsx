@@ -1,65 +1,29 @@
-import { Meta, Title } from "@solidjs/meta"
-
 import { ArticleCard } from "app/components/core/article-card"
 import { ArticleCardContainer } from "app/components/core/article-card-container"
 import { Fragment } from "app/components/core/fragment"
 import { PageContent } from "app/components/core/page-content"
-import { PageHero } from "app/components/core/page-hero"
+import { PageHeader } from "app/components/core/page-header"
+
+import { ArticleMetadata, articles } from "app/constants"
 
 import { For } from "solid-js"
 
-// temporary test data
-const articles = [
-    {
-        name: "Project",
-        company: "The Company",
-        description: "A brief description for the project",
-        path: "/"
-    },
-    {
-        name: "Project",
-        company: "The Company",
-        description: "A brief description for the project",
-        path: "/"
-    },
-    {
-        name: "Project",
-        company: "The Company",
-        description: "A brief description for the project",
-        path: "/"
-    },
-    {
-        name: "Project",
-        company: "The Company",
-        description: "A brief description for the project",
-        path: "/"
-    },
-    {
-        name: "Project",
-        company: "The Company",
-        description: "A brief description for the project",
-        path: "/"
-    }
-]
-
 export function Home() {
+    function renderArticle(article: ArticleMetadata) {
+        return <ArticleCard article={article} />
+    }
+
     return (
         <Fragment>
-            <Title>Simon Robertson</Title>
-            <Meta name="description" content="" />
-            <PageHero />
+            <PageHeader
+                title="Senior Software Engineer"
+                description="@ Shift Platform Ltd"
+                metaTitle="Simon Robertson"
+                metaDescription=""
+            />
             <PageContent expanded={true}>
                 <ArticleCardContainer>
-                    <For each={articles}>
-                        {(article) => (
-                            <ArticleCard
-                                name={article.name}
-                                company={article.company}
-                                description={article.description}
-                                path={article.path}
-                            />
-                        )}
-                    </For>
+                    <For each={articles}>{renderArticle}</For>
                 </ArticleCardContainer>
             </PageContent>
         </Fragment>
