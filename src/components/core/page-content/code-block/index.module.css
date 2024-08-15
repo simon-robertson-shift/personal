@@ -1,0 +1,30 @@
+.component {
+    color: var(--color-surface-foreground);
+    background-color: var(--color-surface-background);
+}
+
+.header {
+    height: 60px;
+    padding: 0 var(--size-1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    flex: 1;
+}
+
+.code {
+    padding: var(--size-1);
+    padding-top: 0;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-wrap: nowrap;
+    tab-size: 4;
+    white-space-collapse: preserve;
+}
+
+.line {
+}
