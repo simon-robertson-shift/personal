@@ -32,3 +32,11 @@ export const companyColor: Record<Company, string> = {
     "*": "#303030",
     "Shift Platform Ltd": "#664152"
 }
+
+export function findArticleMetadataByPath(path: string): ArticleMetadata | null {
+    return (
+        articles.find((article) => {
+            return article.path === path
+        }) ?? null
+    )
+}

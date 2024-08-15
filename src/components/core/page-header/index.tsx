@@ -9,7 +9,6 @@ type Props = {
     readonly description: string
     readonly metaTitle?: string
     readonly metaDescription?: string
-    readonly bypassMeta?: boolean
 }
 
 export function PageHeader({
