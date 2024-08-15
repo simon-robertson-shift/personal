@@ -9,6 +9,12 @@ export type Company = "*" | "Shift Platform Ltd"
 
 export const articles: ArticleMetadata[] = [
     {
+        name: "Skills & Preferences",
+        company: "*",
+        description: "Replace this text with a brief description of the project",
+        path: "/skills-and-preferences"
+    },
+    {
         name: "Smart Flows",
         company: "Shift Platform Ltd",
         description: "Replace this text with a brief description of the project",
@@ -25,6 +31,12 @@ export const articles: ArticleMetadata[] = [
         company: "Shift Platform Ltd",
         description: "Replace this text with a brief description of the project",
         path: "/smart-support"
+    },
+    {
+        name: "Downloadable Files",
+        company: "*",
+        description: "Replace this text with a brief description of the project",
+        path: "/downloadable-files"
     }
 ]
 
