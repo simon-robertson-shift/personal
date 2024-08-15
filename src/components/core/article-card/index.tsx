@@ -1,22 +1,28 @@
+import { ArticleMetadata, companyColor } from "app/constants"
+
 import { Show } from "solid-js"
 
 import css from "./index.module.css"
 
 type Props = {
-    readonly name: string
-    readonly company: string
-    readonly description: string
-    readonly path: string
+    readonly article: ArticleMetadata
 }
 
-export function ArticleCard(props: Props) {
+export function ArticleCard({ article }: Props) {
+    const color = companyColor[article.company]
+
     return (
-        <a class={css.component} href="/" title={props.name}>
-            <Show when={props.company}>
-                <span class={css.company}>@ {props.company}</span>
+        <a
+            class={css.component}
+            href={article.path}
+            title={article.name}
+            style={{ "background-color": color }}
+        >
+            <Show when={article.company && article.company !== "*"}>
+                <span class={css.company}>@ {article.company}</span>
             </Show>
-            <span class={css.name}>{props.name}</span>
-            <span class={css.description}>{props.description}</span>
+            <span class={css.name}>{article.name}</span>
+            <span class={css.description}>{article.description}</span>
         </a>
     )
 }
