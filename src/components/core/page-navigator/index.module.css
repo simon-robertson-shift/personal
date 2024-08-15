@@ -12,3 +12,15 @@
     font-size: 0.8rem;
     z-index: 1;
 }
+
+.component a {
+    padding: 10px 0;
+    display: inline-block;
+    text-decoration: none;
+    user-select: none;
+    color: inherit;
+}
+
+.component a:hover {
+    opacity: 0.75;
+}
