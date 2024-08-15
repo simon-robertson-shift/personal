@@ -5,7 +5,7 @@ import { PageContent } from "app/components/core/page-content"
 export function SmartFlows() {
     return (
         <Fragment>
-            <ArticleHeader path="/smart-flows" />
+            <ArticleHeader />
             <PageContent></PageContent>
         </Fragment>
     )

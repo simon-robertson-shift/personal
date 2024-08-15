@@ -5,7 +5,7 @@ import { PageContent } from "app/components/core/page-content"
 export function SmartSupport() {
     return (
         <Fragment>
-            <ArticleHeader path="/smart-support" />
+            <ArticleHeader />
             <PageContent></PageContent>
         </Fragment>
     )

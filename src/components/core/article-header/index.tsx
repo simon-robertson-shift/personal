@@ -1,13 +1,12 @@
+import { useLocation } from "@solidjs/router"
+
 import { PageHeader } from "app/components/core/page-header"
 
 import { findArticleMetadataByPath } from "app/constants"
 
-type Props = {
-    readonly path: string
-}
-
-export function ArticleHeader({ path }: Props) {
-    const article = findArticleMetadataByPath(path)
+export function ArticleHeader() {
+    const location = useLocation()
+    const article = findArticleMetadataByPath(location.pathname)
 
     if (article === null) {
         throw new Error("Article not found")
