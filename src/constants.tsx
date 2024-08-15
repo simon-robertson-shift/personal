@@ -30,5 +30,5 @@ export const articles: ArticleMetadata[] = [
 
 export const companyColor: Record<Company, string> = {
     "*": "#303030",
-    "Shift Platform Ltd": "#303030"
+    "Shift Platform Ltd": "#664152"
 }
