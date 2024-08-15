@@ -9,19 +9,21 @@ type Props = {
     readonly description: string
     readonly metaTitle?: string
     readonly metaDescription?: string
+    readonly backgroundColor?: string
 }
 
 export function PageHeader({
     title,
     description,
     metaTitle = title,
-    metaDescription = description
+    metaDescription = description,
+    backgroundColor = undefined
 }: Props) {
     return (
         <Fragment>
             <Title>{metaTitle}</Title>
             <Meta name="description" content={metaDescription} />
-            <header class={css.component}>
+            <header class={css.component} style={{ "background-color": backgroundColor }}>
                 <h1>{title}</h1>
                 <em>{description}</em>
             </header>

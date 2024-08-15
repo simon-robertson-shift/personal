@@ -1,5 +1,6 @@
 .component {
     max-width: 600px;
+    padding: var(--size-2);
 }
 
 .expanded {

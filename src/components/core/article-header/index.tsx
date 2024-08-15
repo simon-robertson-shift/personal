@@ -2,7 +2,7 @@ import { useLocation } from "@solidjs/router"
 
 import { PageHeader } from "app/components/core/page-header"
 
-import { findArticleMetadataByPath } from "app/constants"
+import { companyColor, findArticleMetadataByPath } from "app/constants"
 
 export function ArticleHeader() {
     const location = useLocation()
@@ -12,5 +12,13 @@ export function ArticleHeader() {
         throw new Error("Article not found")
     }
 
-    return <PageHeader title={article.name} description={article.description} />
+    const backgroundColor = companyColor[article.company]
+
+    return (
+        <PageHeader
+            title={article.name}
+            description={article.description}
+            backgroundColor={backgroundColor}
+        />
+    )
 }
