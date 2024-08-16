@@ -1,0 +1,14 @@
+[
+    {
+        "type": "articles",
+        "data": null
+    },
+    {
+        "type": "text",
+        "data": ["The is the first paragraph.", "The is the second paragraph."]
+    },
+    {
+        "type": "list",
+        "data": ["Item One", "Item Two", "Item Three"]
+    }
+]

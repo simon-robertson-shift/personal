@@ -3,5 +3,5 @@ current state of it at [simon-robertson.io](https:/simon-robertson.io)
 
 NextJS + Turso + Vercel
 
-I will be connecting the app to a database soon; for now the data is stored in
-the "public/data" directory.
+I will be connecting the app to a database soon; for now the data is imported
+dynamically from the "src/temp" directory.

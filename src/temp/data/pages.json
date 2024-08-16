@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Simon Robertson",
+        "description": "Senior Software Engineer",
+        "category": "",
+        "color": "",
+        "slug": "home"
+    },
+    {
+        "title": "Experience",
+        "description": "Replace this text with a brief description",
+        "category": "",
+        "color": "#303030",
+        "slug": "experience"
+    },
+    {
+        "title": "Smart Flows",
+        "description": "Replace this text with a brief description",
+        "category": "shift",
+        "color": "#664152",
+        "slug": "smart-flows"
+    }
+]

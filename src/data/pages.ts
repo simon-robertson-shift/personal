@@ -1,5 +1,3 @@
-import { env } from "@/env"
-
 export type PageElement = {
     readonly type: PageElementType
     readonly data: any // varies based on the element type
@@ -16,23 +14,13 @@ export type PageMetadata = {
 }
 
 export async function fetchPageElementsForSlug(slug: string): Promise<PageElement[]> {
-    const file = await fetch(`${env.domain}/data/pages/${slug}.json`, {
-        next: {
-            revalidate: 60
-        }
-    })
-
-    return file.json()
+    const file = await import("@/temp/data/pages/" + slug + ".json")
+    return file.default as any
 }
 
 export async function fetchPageMetadataCollection(): Promise<PageMetadata[]> {
-    const file = await fetch(`${env.domain}/data/pages.json`, {
-        next: {
-            revalidate: 60
-        }
-    })
-
-    return file.json()
+    const file = await import("@/temp/data/pages.json")
+    return file.default as any
 }
 
 export async function fetchPageMetadataForSlug(slug: string): Promise<PageMetadata | undefined> {
