@@ -14,7 +14,7 @@ export default async function Page() {
         notFound()
     }
 
-    return <PageRenderer metadata={metadata} />
+    return <PageRenderer metadata={metadata} wideContent={true} />
 }
 
 // Dynamically generate the homepage metadata.

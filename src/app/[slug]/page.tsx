@@ -21,7 +21,7 @@ export default async function Page({ params }: Props) {
         notFound()
     }
 
-    return <PageRenderer metadata={metadata} />
+    return <PageRenderer metadata={metadata} wideContent={false} />
 }
 
 // Dynamically generate page metadata based on the [slug] part of the URL.

@@ -9,8 +9,11 @@ import { PageElement, PageElementType, PageMetadata, fetchPageElementsForSlug } 
 
 import { Fragment, FunctionComponent } from "react"
 
+import css from "./index.module.css"
+
 type Props = {
     readonly metadata: PageMetadata
+    readonly wideContent: boolean
 }
 
 const elementComponents: Record<
@@ -25,7 +28,7 @@ const elementComponents: Record<
     text: TextElement
 }
 
-export async function PageRenderer({ metadata }: Props) {
+export async function PageRenderer({ metadata, wideContent }: Props) {
     const elements = await fetchPageElementsForSlug(metadata.slug)
 
     const content = elements.map((element, key) => {
@@ -40,17 +43,19 @@ export async function PageRenderer({ metadata }: Props) {
 
     return (
         <Fragment>
-            <nav>
-                <a href="/">Simon Robertson</a>
+            <nav className={css.navigation}>
+                <a href="/" title="Simon Robertson">
+                    Simon Robertson
+                </a>
             </nav>
-            <article>
-                <header>
-                    <h1>{metadata.title}</h1>
-                    <em>{metadata.description}</em>
+            <article className={css.article}>
+                <header className={css.header} style={{ backgroundColor: metadata.color }}>
+                    <h1 className={css.title}>{metadata.title}</h1>
+                    <em className={css.description}>{metadata.description}</em>
                 </header>
-                {content}
+                <div className={css.content}>{content}</div>
             </article>
-            <footer></footer>
+            <footer className={css.footer}></footer>
         </Fragment>
     )
 }

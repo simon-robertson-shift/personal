@@ -1,4 +1,4 @@
-import { Noto_Sans, Roboto_Mono } from "next/font/google"
+import { Roboto_Flex, Roboto_Mono } from "next/font/google"
 
 import { ReactNode } from "react"
 
@@ -8,8 +8,8 @@ type Props = {
     readonly children: ReactNode
 }
 
-const fontMain = Noto_Sans({ variable: "--font-main", weight: ["400"], subsets: ["latin"] })
-const fontMono = Roboto_Mono({ variable: "--font-mono", weight: ["400"], subsets: ["latin"] })
+const fontMain = Roboto_Flex({ variable: "--font-main", subsets: ["latin"] })
+const fontMono = Roboto_Mono({ variable: "--font-mono", subsets: ["latin"] })
 
 export default function Layout({ children }: Props) {
     const fontClassses = [fontMain.variable, fontMono.variable]
