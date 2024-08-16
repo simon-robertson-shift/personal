@@ -1,0 +1,22 @@
+html {
+    --color-background: #000000;
+    --color-foreground: #ffffff;
+
+    /* font variables are defined in the src/layout.tsx file */
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 16px;
+
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+}
+
+@media screen and (prefers-color-scheme: light) {
+    html {
+        /* todo: light theme */
+    }
+}
+
+body {
+    margin: 0;
+}
