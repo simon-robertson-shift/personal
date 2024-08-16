@@ -1,5 +1,7 @@
 import { fetchPageMetadataCollection } from "@/data/pages"
 
+import css from "./index.module.css"
+
 export async function ArticlesElement() {
     const collection = await fetchPageMetadataCollection()
 
@@ -9,13 +11,21 @@ export async function ArticlesElement() {
         }
 
         return (
-            <a key={key} href={`/${metadata.slug}`} title={metadata.title}>
-                <article>
-                    <h1>{metadata.title}</h1>
+            <a
+                className={css.link}
+                key={key}
+                href={`/${metadata.slug}`}
+                title={metadata.title}
+                style={{ backgroundColor: metadata.color }}
+            >
+                <article className={css.article}>
+                    <h1 className={css.title}>{metadata.title}</h1>
+                    <p className={css.category}>{metadata.category}</p>
+                    <p className={css.description}>{metadata.description}</p>
                 </article>
             </a>
         )
     })
 
-    return <nav>{conent}</nav>
+    return <nav className={css.navigation}>{conent}</nav>
 }
