@@ -1,0 +1,30 @@
+.root {
+    color: var(--color-surface-foreground);
+    background-color: var(--color-surface-background);
+}
+
+.header {
+    height: var(--size-3);
+    padding: 0 var(--size-1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    flex: 1;
+}
+
+.code {
+    padding: var(--size-1);
+    padding-top: 0;
+    overflow: auto;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+}
+
+.line {
+    display: block;
+    text-wrap: nowrap;
+    white-space-collapse: preserve;
+}

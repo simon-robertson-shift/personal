@@ -2,29 +2,5 @@
     {
         "type": "articles",
         "data": null
-    },
-    {
-        "type": "text",
-        "data": ["The is the first paragraph.", "The is the second paragraph."]
-    },
-    {
-        "type": "list",
-        "data": ["Item One", "Item Two", "Item Three"]
-    },
-    {
-        "type": "text",
-        "data": ["The is the third paragraph.", "The is the fourth paragraph."]
-    },
-    {
-        "type": "code",
-        "data": {
-            "title": "code.ts",
-            "lines": [
-                "// example function",
-                "function example(): boolean {",
-                "    return true",
-                "}"
-            ]
-        }
     }
 ]

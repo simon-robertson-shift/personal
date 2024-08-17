@@ -1,1 +1,30 @@
-[]
+[
+    {
+        "type": "text",
+        "data": ["The is the first paragraph.", "The is the second paragraph."]
+    },
+    {
+        "type": "heading",
+        "data": "Heading"
+    },
+    {
+        "type": "list",
+        "data": ["Item One", "Item Two", "Item Three"]
+    },
+    {
+        "type": "text",
+        "data": ["The is the third paragraph.", "The is the fourth paragraph."]
+    },
+    {
+        "type": "code",
+        "data": {
+            "title": "code.ts",
+            "lines": [
+                "// example function",
+                "function example(): boolean {",
+                "    return true",
+                "}"
+            ]
+        }
+    }
+]

@@ -1,3 +1,5 @@
+import css from "./index.module.css"
+
 type Props = {
     readonly data: {
         readonly title: string
@@ -7,15 +9,19 @@ type Props = {
 
 export function CodeElement({ data }: Props) {
     const content = data.lines.map((line, key) => {
-        return <span key={key}>{line}</span>
+        return (
+            <span key={key} className={css.line}>
+                {line}
+            </span>
+        )
     })
 
     return (
-        <aside>
-            <div>
-                <span>{data.title}</span>
+        <aside className={css.root}>
+            <div className={css.header}>
+                <span className={css.title}>{data.title}</span>
             </div>
-            <div>{content}</div>
+            <div className={css.code}>{content}</div>
         </aside>
     )
 }

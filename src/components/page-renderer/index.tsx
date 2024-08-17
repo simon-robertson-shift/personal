@@ -7,6 +7,8 @@ import { TextElement } from "@/components/page-elements/text-element"
 
 import { PageElement, PageElementType, PageMetadata, fetchPageElementsForSlug } from "@/data/pages"
 
+import Link from "next/link"
+
 import { Fragment, FunctionComponent } from "react"
 
 import css from "./index.module.css"
@@ -44,16 +46,16 @@ export async function PageRenderer({ metadata, wideContent }: Props) {
     return (
         <Fragment>
             <nav className={css.navigation}>
-                <a href="/" title="Simon Robertson">
+                <Link href="/" title="Simon Robertson">
                     Simon Robertson
-                </a>
+                </Link>
             </nav>
             <article className={css.article}>
                 <header className={css.header} style={{ backgroundColor: metadata.color }}>
                     <h1 className={css.title}>{metadata.title}</h1>
                     <em className={css.description}>{metadata.description}</em>
                 </header>
-                <div className={css.content}>{content}</div>
+                <div className={`${css.content} ${wideContent ? css.wide : ""}`}>{content}</div>
             </article>
             <footer className={css.footer}></footer>
         </Fragment>

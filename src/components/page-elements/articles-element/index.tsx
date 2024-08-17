@@ -1,5 +1,7 @@
 import { fetchPageMetadataCollection } from "@/data/pages"
 
+import Link from "next/link"
+
 import css from "./index.module.css"
 
 export async function ArticlesElement() {
@@ -11,7 +13,7 @@ export async function ArticlesElement() {
         }
 
         return (
-            <a
+            <Link
                 className={css.link}
                 key={key}
                 href={`/${metadata.slug}`}
@@ -20,10 +22,12 @@ export async function ArticlesElement() {
             >
                 <article className={css.article}>
                     <h1 className={css.title}>{metadata.title}</h1>
-                    <p className={css.category}>{metadata.category}</p>
                     <p className={css.description}>{metadata.description}</p>
+                    {metadata.category ? (
+                        <p className={css.category}>@ {metadata.category}</p>
+                    ) : null}
                 </article>
-            </a>
+            </Link>
         )
     })
 

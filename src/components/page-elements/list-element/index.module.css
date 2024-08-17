@@ -1,0 +1,7 @@
+.list {
+    margin: var(--size-2) 0;
+}
+
+.item + .item {
+    margin-top: var(--size-1);
+}
