@@ -1,8 +1,8 @@
 html {
     --color-background: #000000;
     --color-foreground: #f0f0f0;
-    --color-surface-background: #202020;
-    --color-surface-foreground: #f0f0f0;
+    --color-surface-background: #282828;
+    --color-surface-foreground: #f8f8f8;
     --size-1: 20px;
     --size-2: calc(var(--size-1) * 2);
     --size-3: calc(var(--size-1) * 3);
