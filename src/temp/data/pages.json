@@ -7,17 +7,45 @@
         "slug": "home"
     },
     {
-        "title": "Experience",
-        "description": "Replace this text with a brief description",
+        "title": "Hello",
+        "description": "This website is work in progress. Coming soon™",
         "category": "",
         "color": "#303030",
-        "slug": "experience"
+        "slug": "hello"
     },
     {
         "title": "Smart Flows",
         "description": "Replace this text with a brief description",
-        "category": "Shift Platform Ltd",
+        "category": "Shift Platform",
         "color": "#664152",
         "slug": "smart-flows"
+    },
+    {
+        "title": "JIT Translations",
+        "description": "Replace this text with a brief description",
+        "category": "Shift Platform",
+        "color": "#664152",
+        "slug": "jit-translations"
+    },
+    {
+        "title": "Smart Support",
+        "description": "Replace this text with a brief description",
+        "category": "Shift Platform",
+        "color": "#664152",
+        "slug": "smart-support"
+    },
+    {
+        "title": "Nice Import Sorting",
+        "description": "An opinionated ES import sorting plugin for Prettier",
+        "category": "",
+        "color": "#4d5f47",
+        "slug": "nice-import-sorting"
+    },
+    {
+        "title": "Downloads",
+        "description": "Replace this text with a brief description",
+        "category": "",
+        "color": "#303030",
+        "slug": "downloads"
     }
 ]

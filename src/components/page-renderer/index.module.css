@@ -5,9 +5,15 @@
     position: sticky;
     display: flex;
     flex-direction: row;
-    align-items: center;
     background-color: var(--color-background);
     z-index: 1;
+}
+
+.navigation a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.8rem;
 }
 
 .article *:first-child {
