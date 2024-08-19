@@ -1,5 +1,5 @@
 This is my personal website. It is still very much a work in progress but you can view the
-current state of it at [simon-robertson.io](https:/simon-robertson.io)
+current state of it at [simon-robertson.io](https://simon-robertson.io)
 
 NextJS + Turso + Vercel
 
